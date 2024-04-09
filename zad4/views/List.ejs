@@ -1,0 +1,16 @@
+<html>
+    <%- include('partials/head.ejs')%>
+    <body>
+        <%- include('partials/navigation.ejs')%>
+        <h1>List</h1>
+        <ul>
+            <% students.forEach(function(student){ %>
+                <li>
+                    <p><%= student.name %></p>
+                    <p><%= student.code %></p>
+                    <p><%= student.fieldOfStudies %></p>
+                </li>
+            <%  }); %>
+        </ul>
+    </body>
+</html>
